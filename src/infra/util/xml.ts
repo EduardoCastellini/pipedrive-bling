@@ -1,7 +1,8 @@
 import builder from 'xmlbuilder'
+import { XmlBuilder } from '../../data/protocols/xml-builder'
 import { Deals } from '../../domain/models/deals'
 
-export class Builder {
+export class Builder implements XmlBuilder {
   async build (deal: Deals): Promise<any> {
     console.log('Buildando XML')
     return builder.create('pedido', { encoding: 'utf-8' })
