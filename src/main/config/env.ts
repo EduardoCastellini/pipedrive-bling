@@ -1,8 +1,5 @@
-import * as dotenv from 'dotenv'
-dotenv.config()
-
 export default {
-  mongoUrl: process.env.MONGO_URL ?? 'mongodb://mongo:27017/clean-node-api',
+  mongoUrl: process.env.MONGO_URL ?? 'mongodb://mongo:27017/pipedrive-bling',
   port: process.env.PORT ?? 3000,
 
   pipedrive: {
