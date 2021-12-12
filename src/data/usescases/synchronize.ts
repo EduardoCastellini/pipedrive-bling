@@ -40,6 +40,6 @@ export class SynchronizeService implements Synchronize {
       }
     }
 
-    return { success: true, message: 'Processo de sincronização concluido com sucesso' }
+    return { success: true, message: 'Processo de sincronização concluído com sucesso' }
   }
 }
