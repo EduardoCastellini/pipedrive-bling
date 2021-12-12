@@ -5,7 +5,7 @@ import { LoadDealsRepository } from '../protocols/load-deals-repository'
 export class DbLoadDeals implements LoadDeals {
   constructor (private readonly loadDealsRepository: LoadDealsRepository) {}
 
-  async load (): Promise<DealsModel[]> {
+  async load (): Promise<DealsModel[]|null> {
     const deals = await this.loadDealsRepository.loadAll()
     return deals
   }

@@ -8,7 +8,6 @@ export interface Deals {
 
 export interface AddDeals {
   deals: Deals[]
-  orders: object
   date: string
   total: number
 }
@@ -16,7 +15,6 @@ export interface AddDeals {
 export interface DealsModel {
   _id: string
   deals: Deals[]
-  orders: object
   date: string
   total: number
 }

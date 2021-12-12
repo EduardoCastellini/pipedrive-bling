@@ -15,5 +15,5 @@ export const makeSynchronize = (): Synchronize => {
   const dealsMongoRepository = new DealsMongoRepository()
   const bling = new Bling(blingUrl, apiKey)
   const xmlBuilder = new Builder()
-  return new SynchronizeService(pipedrive, dealsMongoRepository, dealsMongoRepository, xmlBuilder, bling)
+  return new SynchronizeService(pipedrive, dealsMongoRepository, dealsMongoRepository, dealsMongoRepository, xmlBuilder, bling)
 }
