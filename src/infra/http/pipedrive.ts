@@ -10,15 +10,9 @@ export class Pipedrive implements SearchDeals {
   ) {}
 
   async search (): Promise<Deals[]|undefined> {
-    try {
-      console.log('Bucando dados no pipedrive')
-      const response = await this.client.get<PipedriveResponse>(`${this.pipedriveUrl}/deals?api_token=${this.pipedriveToken}&status=won`)
-      if (response.status === 200) return this.normalizeResponse(response?.data)
-    } catch (error) {
-      console.log('status: ', error?.response?.status)
-      console.log('config: ', error?.response?.config)
-      console.log('data: ', error?.response?.data?.erros)
-    }
+    console.log('Bucando dados no pipedrive')
+    const response = await this.client.get<PipedriveResponse>(`${this.pipedriveUrl}/deals?api_token=${this.pipedriveToken}&status=won`)
+    if (response.status === 200) return this.normalizeResponse(response?.data)
   }
 
   private normalizeResponse (
