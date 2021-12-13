@@ -12,8 +12,8 @@ const deal = {
 
 const makeFakeDealsData = (): DealsModel[] => ([
   {
-    _id: '',
-    date: '',
+    _id: 'ko975u3875395rrjf394385',
+    date: '2021-12-11',
     deals: [deal],
     total: 1200
   }
