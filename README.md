@@ -22,8 +22,8 @@ URL de produção: https://pipedrive-bling.herokuapp.com
 
 ## Executando a aplicação local
 
-1. Baixar o repositório do projeto.
-2. Acesse o diretório raiz do projeto em sua máquina.
+1. Baixe o repositório do projeto em seu computador.
+2. Acesse o diretório raiz do projeto.
 3. Crie o arquivo .env e adicione as variáveis de ambiente conforme o arquivo de exemplo: .env.example.
 4. Execute os seguintes comandos:
 
