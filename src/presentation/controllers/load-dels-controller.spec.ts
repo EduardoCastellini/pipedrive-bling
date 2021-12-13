@@ -48,7 +48,7 @@ const makeSut = (): sutTypes => {
   }
 }
 
-describe('AddSurvey Controller', () => {
+describe('AddDeals Controller', () => {
   test('Should return 500 if LoadDeals throws', async () => {
     const { sut, loadDealsStub } = makeSut()
     jest.spyOn(loadDealsStub, 'load').mockReturnValueOnce(new Promise((resolve, reject) => reject(new Error())))
